@@ -21,3 +21,7 @@ Configure with Annotation
 
 Autowired
 ![alt text](image.png)
+![alt text](image-1.png)
+
+Qualifier
+![alt text](image-2.png)

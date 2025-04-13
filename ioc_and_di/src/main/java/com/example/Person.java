@@ -1,11 +1,16 @@
 package com.example;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
 @Component("personBean")
 public class Person {
-    // @Autowired
+    @Autowired
+    @Qualifier("dogBean")
     private Pet pet;
+    @Value("Akzhol")
     private String surname;
     private int age;
 
