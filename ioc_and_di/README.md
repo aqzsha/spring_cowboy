@@ -14,3 +14,10 @@ Init and Destroy
 ![alt text](images/image-9.png)
 ![alt text](images/image-10.png)
 ![alt text](images/image-11.png)
+
+Configure with Annotation
+![alt text](images/image11.png)
+![alt text](images/image12.png)
+
+Autowired
+![alt text](image.png)

@@ -1,15 +1,20 @@
 package com.example;
 
+import org.springframework.stereotype.Component;
+
+@Component("personBean")
 public class Person {
+    // @Autowired
     private Pet pet;
     private String surname;
     private int age;
 
-    // public Person(Pet pet){
-    //     this.pet = pet;
-    // }
+    // @Autowired
+    public Person(Pet pet){
+        this.pet = pet;
+    }
 
-    public Person(){}
+    // public Person(){}
 
     public void setPet(Pet pet){
         System.out.println("Class Person: set pet");
@@ -20,7 +25,8 @@ public class Person {
         System.out.println("Hello, my lovely Pet!");
         pet.say();
     }
-
+    
+    // @Autowired
     public void setSurname(String surname) {
         this.surname = surname;
     }
