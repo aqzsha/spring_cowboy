@@ -1,27 +1,24 @@
 package com.example;
-
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
-import org.springframework.beans.factory.annotation.Value;
-import org.springframework.stereotype.Component;
-
-@Component("personBean")
 public class Person {
-    @Autowired
-    @Qualifier("dogBean")
+    // @Autowired
+    // @Qualifier("dogBean")
     private Pet pet;
-    @Value("Akzhol")
+    // @Value("Akzhol")
     private String surname;
     private int age;
 
     // @Autowired
+    // public Person(@Qualifier("dogBean") Pet pet){
+    //     this.pet = pet;
+    // }
+    
     public Person(Pet pet){
         this.pet = pet;
     }
-
     // public Person(){}
 
-    public void setPet(Pet pet){
+    public void setPet( 
+    Pet pet){
         System.out.println("Class Person: set pet");
         this.pet = pet;
     }
